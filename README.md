@@ -1,2 +1,2 @@
-# TouchingNanoDemo
-VR Demo for Touching Nano 
+# Touching Nano Demo
+This repository contains the code for my Touching Nano VR demonstration. 
