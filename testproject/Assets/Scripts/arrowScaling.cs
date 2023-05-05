@@ -42,7 +42,7 @@ public class arrowScaling : MonoBehaviour
     }
     void ChangeAlpha(Material mat, float alphaVal)
     {
-        Debug.Log("alphaVal: " + alphaVal);
+        //Debug.Log("alphaVal: " + alphaVal);
         Color oldColor = mat.color;
         Color newColor = new Color(oldColor.r, oldColor.g, oldColor.b, alphaVal);
         mat.SetColor("_Color", newColor);
