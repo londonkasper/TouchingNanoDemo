@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 [System.Serializable]
 public class Haptic{
-    //[Range(0,1)]
+
     public float intensity, duration;
     
     public GameObject centerParticle;
@@ -40,20 +40,9 @@ public class HapticInteractable : MonoBehaviour
         interactable.activated.AddListener(hapticOnActivated.TriggerHaptic);
         interactable.hoverEntered.AddListener(hapticHoverEntered.TriggerHaptic);
         interactable.hoverExited.AddListener(hapticHoverExited.TriggerHaptic);
-        interactable.selectEntered.AddListener(hapticSelectEntered.TriggerHaptic); // when select is entered call the trigger haptic function using the set parameters for the thing
-        //interactable.selectEntered.AddListener(holdHaptic);
+        interactable.selectEntered.AddListener(hapticSelectEntered.TriggerHaptic); // when select is entered call the trigger haptic function using the set parameters 
         interactable.selectExited.AddListener(hapticSelectExited.TriggerHaptic);
 
     }
-//    void FixedUpdate(){
-    
-//     if(interactable.selectEntered){
-//         controller.SendHapticImpulse(1.0f - distance/maxDistance, 1.0f);
-//     }
-//    }
 
-//    void holdHaptic(){
-//     controller.SendHapticImpulse(1.0f - distance/maxDistance, 1.0f);
-//    }
-   
 }

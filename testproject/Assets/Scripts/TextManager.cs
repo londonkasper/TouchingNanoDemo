@@ -15,15 +15,12 @@ public class TextManager : MonoBehaviour
     {
         forceVal = FindObjectOfType<forceNoMovement>();
         textDisplay = GetComponent<TextMeshProUGUI>();
-        //textDisplay = forceVal.force();
         
     }
 
     
     void FixedUpdate()
     {
-        //forceVal = FindObjectOfType<forceNoMovement>();
-        //Debug.Log("Coming from TextManager.cs" + forceVal.force);
         textDisplay.text = "Van der Waal's Forces are the interactions particles experience as they get close together." + Environment.NewLine + Environment.NewLine+ "At a certain distance, two particles will experience an attractive force. This is called the Lennard-Jones Potential." + Environment.NewLine + Environment.NewLine+ "Try moving the blue particle away from the red particles, and see how the force decreases. Once it hits zero, you have passed the threshold." + Environment.NewLine+ Environment.NewLine+"Directional force vector for blue particle: "+ Environment.NewLine + forceVal.force.ToString();
 
     }
